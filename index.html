@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+ <title>Read Quran Online Free – Arabic Text, Translation, Audio</title>
+
+<meta name="description" content="Read the Holy Quran online with Arabic text, translation, audio recitation, prayer times, Qibla direction, and Islamic tools.">
+
+<meta name="keywords" content="Quran online, read Quran, Holy Quran, Quran translation, Quran audio, Islamic website, Quran reading">
+
+<meta name="author" content="Quran Website">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Quran Web App</title>
+
+<!-- PWA Manifest -->
+<link rel="manifest" href="manifest.json">
+
+<!-- Connect CSS -->
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Arabic Quran Font -->
+<link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>📖 Quran Web App</h1>
+<p>Read the Holy Quran in Arabic and English</p>
+
+</header>
+
+<div class="container">
+
+<!-- Surah List -->
+<div class="sidebar">
+
+<h2>⭐ Favorite Surahs</h2>
+<ul id="favoriteSurahs"></ul>
+
+<h2>📖 All Surahs</h2>
+
+<input 
+type="text" 
+id="searchSurah" 
+placeholder="🔍 Search Surah..."
+onkeyup="searchSurah()"
+>
+
+<ul id="surahList">
+<li>Loading Surahs...</li>
+</ul>
+
+</div>
+
+<!-- Reading Area -->
+<div class="content">
+
+<h2>🤲 Daily Islamic Duas</h2>
+
+<div id="duaBox">
+
+<p id="duaArabic"></p>
+<p id="duaEnglish"></p>
+
+</div>
+
+<h2>🕌 Prayer Times</h2>
+
+<div id="prayerTimes">
+
+<p>Loading prayer times...</p>
+<h2>🧭 Qibla Direction</h2>
+
+<div id="qiblaBox">
+<p>Move your phone to find the Qibla direction.</p>
+
+<div id="qiblaArrow">⬆</div>
+<h2>📿 Digital Tasbih</h2>
+
+<div id="tasbihBox">
+
+<h3 id="tasbihCount">0</h3>
+
+<button onclick="increaseTasbih()">Tap</button>
+
+<button onclick="resetTasbih()">Reset</button>
+
+<h2>🌙 Today's Quran Verse</h2>
+
+<div id="dailyVerse">
+
+<p>Loading today's verse...</p>
+
+<h2>🗓 Islamic (Hijri) Date</h2>
+
+<div id="hijriDate">
+
+<p>Loading Islamic date...</p>
+
+<h2>📿 Digital Tasbih Counter</h2>
+
+<div id="tasbihBox">
+
+<h3 id="tasbihCount">0</h3>
+
+<button onclick="increaseTasbih()">➕ Count</button>
+
+<button onclick="resetTasbih()">🔄 Reset</button>
+
+<h2>🧭 Qibla Direction</h2>
+
+<div id="qiblaContainer">
+
+<p>Turn your phone to find the Qibla direction.</p>
+
+<div id="compass">
+
+<div id="qiblaArrow">⬆</div>
+
+<h2>🌙 Islamic Calendar</h2>
+
+<div id="islamicCalendar">
+
+<h3 id="hijriDate">Loading Hijri date...</h3>
+
+<p id="ramadanCountdown"></p>
+
+</div>
+
+
+</div>
+
+<h2>🔎 Search Quran Verses</h2>
+
+<input
+type="text"
+id="verseSearch"
+placeholder="Search Quran..."
+onkeyup="searchQuran()"
+>
+
+<div id="searchResults">
+
+<p>Type a word to search the Quran.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Connect JavaScript -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
